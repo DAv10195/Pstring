@@ -1,0 +1,34 @@
+a pString is a struct:
+
+typedef struct {
+char size;
+char string[254];
+} Pstring;
+
+the first byte is the size of the pString, and thus it is of 0 <= 0 < 255 (the max size of 254
+because we have '\0' at the end of each string, and a char can strore max value of 255).
+
+the main function asks for 2 serieses of inputs for 2 pStrings:
+
+first: the size of the pString, which will be stored as the first byte at the pString address.
+
+second: the string itself.
+
+after these 4 inputs, main will ask for an operation number to be inputed:
+
+opt 50: prints both inputed pString sizes.
+
+opt 51: asks for a char to replace in both pStings, for a char to peplace with, and replaces each
+occurance of the first with the second in both pStrings, and prints the results.
+
+opt 52: asks for start index, end index, and copy's the second pString between start index to end
+index into the first pString, printing the first pString after the change.
+
+opt 53:	swaps cases for all letters in each pString (e.g. 'a' wiil become 'A' and 'A' will become
+'a'), printing both after the changes.
+
+opt 54: asks for start index, end index and prints the result of the (lexigographical)
+comparison of both sub strings in the two inputed pStrings between the inputed index and the end
+index. 
+
+other inputs will call the default case which prints an invalid option message.
