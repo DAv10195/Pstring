@@ -1,4 +1,3 @@
-#313528432 David Abramov
     .section  .rodata
     
      .align 8                   # set up jump table by multiple of eight
