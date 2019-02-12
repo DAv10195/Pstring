@@ -1,4 +1,3 @@
-#313528432 David Abramov
     .section  .rodata
     
 # string formats
