@@ -3,10 +3,13 @@ a pString is a struct:
 typedef struct {
 char size;
 char string[254];
-} Pstring;
+} Pstring;
+
 
 the first byte is the size of the pString, and thus it is of 0 <= 0 < 255 (the max size of 254
 because we have '\0' at the end of each string, and a char can strore max value of 255).
+
+The struct defined above resembles the classic Pascal String.
 
 the main function asks for 2 serieses of inputs for 2 pStrings:
 
